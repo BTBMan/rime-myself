@@ -1,0 +1,16 @@
+patch:
+  __include: common.yaml:/customPatch
+  schema:
+    name: 简拼
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: [' 中 ', ' 英 ']
+    - name: full_shape
+    - name: zh_simp
+      reset: 1
+    - options: ['utf8', 'gbk', 'gb2312']
+      reset: 0
+
+  simplifier:
+    option_name: zh_simp
