@@ -8,12 +8,15 @@ patch:
     - name: ascii_mode
       reset: 1
       states: ['中', '英']
-    - name: full_shape
+    # - name: full_shape
     - name: simplification
       reset: 1
-    - name: full_shape
-      states: ['半', '全']
+    - name: ascii_punct # 中英标点
+      states: ['，', ',']
       reset: 0
+    # - name: full_shape
+    #   states: ['半', '全']
+    #   reset: 0
 
   speller:
     alphabet: zyxwvutsrqponmlkjihgfedcba
